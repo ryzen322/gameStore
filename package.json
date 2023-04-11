@@ -1,0 +1,23 @@
+{
+  "name": "epicgames-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzen322/gameStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryzen322/gameStore/issues"
+  },
+  "homepage": "https://github.com/ryzen322/gameStore#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
