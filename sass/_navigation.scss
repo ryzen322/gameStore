@@ -1,0 +1,129 @@
+.navigation {
+  height: 5.3rem;
+  width: 100%;
+  background-color: $backgroundColor--2;
+  padding-left: 1rem;
+
+  display: flex;
+  gap: 1rem;
+
+  &__logo {
+    height: 100%;
+    width: 4.25rem;
+    // background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 42rem;
+
+    & ul {
+      height: 100%;
+      // flex: 1;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+
+      & li:first-child::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.5rem;
+        bottom: 0;
+        background-color: #0078f2;
+      }
+
+      & li:not(:first-child):hover::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        bottom: 0;
+        background-color: #0078f2;
+      }
+
+      & li:last-child {
+        border-left: 1px solid grey;
+      }
+
+      & li {
+        cursor: pointer;
+        position: relative;
+        padding: 0 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & a {
+          color: #cccccc;
+        }
+      }
+    }
+  }
+
+  &__signin {
+    position: relative;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.25rem;
+
+    &--icons:last-child {
+      background-color: #0078f2;
+      padding: 0 4rem;
+    }
+
+    &--icons {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+      cursor: pointer;
+
+      & h1 {
+        color: #cccccc;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      & span {
+        color: #cccccc;
+        font-size: 2rem;
+      }
+
+      & .display-language {
+        position: absolute;
+        height: auto;
+        width: 18rem;
+        background-color: $backgroundColor--2;
+        top: 5.3rem;
+        left: -5.9rem;
+        padding: 1rem 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        & a {
+          color: #cccccc;
+          font-size: 0.95rem;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
